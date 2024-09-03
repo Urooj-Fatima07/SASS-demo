@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sass Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrQkTyKU+8c6Yl6ZB/jg6Yb1eBx2k1u6bFfQxPxJZoBju3eE+NqGZLXn4bkG4xIKqedYHY6ABlX5F7UQow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">MyLogo</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <h1>Hi, I'm Jane Doe</h1>
+          <p>Web Developer & UI/UX Designer</p>
+          <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jane Doe">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile Picture">
+        <div class="about-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel purus at quam suscipit tincidunt.
+            Phasellus vitae dui non odio facilisis tincidunt.</p>
+          <p>Skilled in creating responsive and user-friendly websites with a focus on modern design and seamless user
+            experiences.</p>
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="fas fa-code"></i>
+          <h3>HTML & CSS</h3>
+          <div class="progress">
+            <div class="progress-bar" data-percentage="95%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fas fa-js"></i>
+          <h3>JavaScript</h3>
+          <div class="progress">
+            <div class="progress-bar" data-percentage="80%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fas fa-react"></i>
+          <h3>React</h3>
+          <div class="progress">
+            <div class="progress-bar" data-percentage="75%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fas fa-sass"></i>
+          <h3>Sass</h3>
+          <div class="progress">
+            <div class="progress-bar" data-percentage="85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://uizard.io/static/a80ac0a2c7edd0da39763f25e18368c7/0cfa7/87cb8674e6d1bd8f2ff8c59bdaba6cdb5bef0c25-1440x835.webp" alt="Project 1">
+          <div class="portfolio-overlay">
+            <h3>Project One</h3>
+            <p>Web Application Development</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://uizard.io/static/ce189b72230b6da9636e48e152ebc41b/0cfa7/369d659bab8678a6a79adf14e29c57c8a0347022-1440x835.webp" alt="Project 2">
+          <div class="portfolio-overlay">
+            <h3>Project Two</h3>
+            <p>UI/UX Design</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+        <h2>What Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGV2ZWxvcGVyJTIwcHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Client One" class="testimonial-img">
+                <div class="testimonial-content">
+                    <p>"Jane did an excellent job on our website. Her attention to detail and design skills are top-notch."</p>
+                    <h4>John Doe</h4>
+                    <p class="role">CEO, Company One</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Client Two" class="testimonial-img">
+                <div class="testimonial-content">
+                    <p>"Highly recommended! Jane's work exceeded our expectations."</p>
+                    <h4>Jane Smith</h4>
+                    <p class="role">Marketing Director, Company Two</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Client Three" class="testimonial-img">
+                <div class="testimonial-content">
+                    <p>"Outstanding service and results. Will definitely work with Jane again."</p>
+                    <h4>Emily Johnson</h4>
+                    <p class="role">Product Manager, Company Three</p>
+                </div>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+        <div class="footer-left">
+            <p>&copy; 2024 Jane Doe. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+  <!-- JavaScript for Interactive Elements -->
+  <script>
+    // Toggle Mobile Navigation
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    // Progress Bars Animation
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    window.addEventListener('scroll', () => {
+      const windowHeight = window.innerHeight;
+      progressBars.forEach(bar => {
+        const barTop = bar.getBoundingClientRect().top;
+        if (barTop < windowHeight - 50) {
+          bar.style.width = bar.getAttribute('data-percentage');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

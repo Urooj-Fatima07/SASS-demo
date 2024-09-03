@@ -1,0 +1,62 @@
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(52, 152, 219, 0.7), rgba(52, 152, 219, 0.7)),
+        url("https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .hero-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .hero-image {
+                img {
+                    width: 100%;
+                    max-width: 500px; // Adjust based on your design preference
+                    border-radius: 10px; // Optional: adds a rounded corner to the image
+                }
+            }
+
+            .hero-content {
+                padding: 50px;
+                flex: 1; // This allows the text column to adjust based on the image size
+
+                h1 {
+                    font-size: 48px;
+                    color: #333;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 24px;
+                    color: #555;
+                    margin-bottom: 30px;
+                }
+
+                .btn {
+                    background-color: #007bff;
+                    color: #fff;
+                    padding: 15px 30px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #0056b3;
+                    }
+                }
+            }
+        }
+    }
+}

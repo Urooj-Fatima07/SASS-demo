@@ -1,0 +1,36 @@
+// Mixin for Flex Centering
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixin for Responsive Text
+@mixin responsive-text($size-mobile, $size-tablet) {
+    font-size: $size-mobile;
+
+    @media (min-width: $breakpoint-mobile) {
+        font-size: $size-tablet;
+    }
+}
+
+// Mixin for Button Styles
+@mixin button($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+// Mixin for Box Shadow
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}

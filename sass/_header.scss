@@ -1,0 +1,75 @@
+/* Header Styles */
+
+header {
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    .container {
+        @include flex-center;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            @include flex-center;
+
+            li {
+                margin-left: 20px;
+
+                a {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        nav ul {
+            position: absolute;
+            top: 60px;
+            left: -100%;
+            width: 100%;
+            height: calc(100vh - 60px);
+            background-color: $white;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: left 0.3s ease;
+
+            li {
+                margin: 20px 0;
+            }
+        }
+
+        nav ul.active {
+            left: 0;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+}

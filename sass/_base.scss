@@ -1,0 +1,45 @@
+/* Base Styles */
+
+/* Reset Margins and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: $body-font;
+    background-color: $light-gray;
+    color: $dark-gray;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    margin-bottom: 20px;
+    color: $primary-color;
+}
+
+/* Links */
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($primary-color, 10%);
+    }
+}
+
+/* Buttons */
+.btn {
+    @include button($primary-color, $white);
+}
