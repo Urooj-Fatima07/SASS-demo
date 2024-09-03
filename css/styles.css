@@ -506,4 +506,44 @@ footer .container .footer-right a:first-child {
   margin-left: 0;
 }
 
+#navbar {
+  width: 100%;
+  background-color: #000;
+  height: 52px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#navbar .container {
+  width: 100%;
+  height: 48px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#navbar .container .logo {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #d50032, #fff, #00853f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#navbar .flag-line {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #d50032 25%, #000 25% 50%, #fff 50% 75%, #00853f 75%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
